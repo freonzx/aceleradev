@@ -8,8 +8,7 @@ function makeList(arr) {
   "use strict";
 
   // change code below this line
-  let resultDisplayArray = [];
-
+  const resultDisplayArray = [];
   arr.map(e => {
     resultDisplayArray.push(`<li class="text-warning">${e}</li>`);
   });
