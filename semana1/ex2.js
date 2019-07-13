@@ -9,6 +9,7 @@ function makeList(arr) {
 
   // change code below this line
   const resultDisplayArray = [];
+
   arr.map(e => {
     resultDisplayArray.push(`<li class="text-warning">${e}</li>`);
   });
