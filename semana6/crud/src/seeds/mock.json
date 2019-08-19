@@ -1,0 +1,20 @@
+[
+	{
+		"id": 0,
+		"title": "Mock card",
+		"description": "Mock description lorem ipsum dolor",
+		"image": "http://via.placeholder.com/130"
+	},
+	{
+		"id": 1,
+		"title": "Mock card 2",
+		"description": "Mock description lorem ipsum dolor",
+		"image": "http://via.placeholder.com/130"
+	},
+	{
+		"id": 2,
+		"title": "Mock card 3",
+		"description": "Mock description lorem ipsum dolor",
+		"image": "http://via.placeholder.com/130"
+	}
+]
