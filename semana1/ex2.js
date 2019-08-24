@@ -1,21 +1,18 @@
 // Use a sintaxe de template literal para mostrar cada entrada resultado do array failure. Cada entrada devera esta encapsulada dentro de um li conforme o exemplo
 const result = {
-  success: ["max-length", "no-amd", "prefer-arrow-functions"],
-  failure: ["no-var", "var-on-top", "linebreak"],
-  skipped: ["id-blacklist", "no-dup-keys"]
-};
+    success: ['max-length', 'no-amd', 'prefer-arrow-functions'],
+    failure: ['no-var', 'var-on-top', 'linebreak'],
+    skipped: ['id-blacklist', 'no-dup-keys']
+}
 function makeList(arr) {
-  "use strict";
+    'use strict'
+    // change code below this line
+    const resultDisplayArray = arr.map(e => {
+        return `<li class="text-warning">${e}</li>`
+    })
+    // change code above this line
 
-  // change code below this line
-  const resultDisplayArray = [];
-
-  arr.map(e => {
-    resultDisplayArray.push(`<li class="text-warning">${e}</li>`);
-  });
-  // change code above this line
-
-  return resultDisplayArray;
+    return resultDisplayArray
 }
 /**
  * makeList(result.failure) should return:
@@ -23,5 +20,5 @@ function makeList(arr) {
  *   `<li class="text-warning">var-on-top</li>`,
  *   `<li class="text-warning">linebreak</li>` ]
  **/
-const resultDisplayArray = makeList(result.failure);
-console.log(resultDisplayArray);
+const resultDisplayArray = makeList(result.failure)
+console.log(resultDisplayArray)
